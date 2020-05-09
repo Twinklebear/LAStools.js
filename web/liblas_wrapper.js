@@ -14,7 +14,6 @@ class LASFile {
         FS.writeFile(fileName, new Uint8Array(fileData));
         this.lasFile = openLAS(fileName);
         this.fileName = fileName;
-        this.bounds = new Float32Array(HEAPF32.buffer, getBounds(this.lasFile), 6);
     }
 
     loadPoints() {
@@ -35,6 +34,10 @@ class LASFile {
         closeLAS(this.lasFile);
         FS.unlink(this.fileName);
         this.lasFile = null;
+    }
+
+    get bounds() {
+        return new Float32Array(HEAPF32.buffer, getBounds(this.lasFile), 6);
     }
 
     get numLoadedPoints() {
