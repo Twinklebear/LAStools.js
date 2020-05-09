@@ -3,8 +3,8 @@
 #COPTS    = -g -Wall -Wno-deprecated -DDEBUG 
 COPTS     = -O3 -Wall -Wno-deprecated -Wno-strict-aliasing -Wno-write-strings -Wno-unused-result -DNDEBUG 
 #COMPILER  = CC
-COMPILER  = g++
-LINKER  = g++
+COMPILER  = emcc
+LINKER  = emcc
 #BITS     = -64
 
 #LIBS     = -L/usr/lib64

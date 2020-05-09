@@ -2,13 +2,13 @@
 #
 #COPTS    = -g -Wall
 COPTS     = -O3 -Wall -Wno-strict-aliasing -Wno-unused-result
-COMPILER  = g++
-LINKER  = g++
+COMPILER  = emcc
+LINKER  = emcc
 #BITS     = -64
 
 #LIBS     = -L/usr/lib32
 #LIBS     = -L/usr/lib64
-INCLUDE  = -I/usr/include
+#INCLUDE  = -I/usr/include
 
 LASLIBS     = -L../lib
 LASINCLUDE  = -I../../LASzip/src -I../inc

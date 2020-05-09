@@ -2,11 +2,11 @@
 #
 #COPTS    = -g -Wall -DUNORDERED -DHAVE_UNORDERED_MAP -std=c++11
 COPTS     = -O3 -Wall -Wno-deprecated -Wno-strict-aliasing -Wno-write-strings -Wno-unused-result -DNDEBUG -DUNORDERED -DHAVE_UNORDERED_MAP -std=c++11
-COMPILER  = g++
-AR  = ar rc
+COMPILER  = emcc
+AR  = emar rc
 #BITS     = -64
 
-INCLUDE		= -I/usr/include/ -I../../LASzip/src -I../inc -I.
+INCLUDE		= -I../../LASzip/src -I../inc -I.
 
 OBJ_LAS		= lasreader.o lasignore.o laswriter.o lasreader_las.o lasreader_bin.o lasreader_shp.o lasreader_asc.o lasreader_bil.o lasreader_dtm.o lasreader_ply.o lasreader_qfit.o lasreader_txt.o lasreadermerged.o lasreaderbuffered.o lasreaderstored.o lasreaderpipeon.o laswriter_las.o laswriter_bin.o laswriter_qfit.o laswriter_wrl.o laswriter_txt.o laswritercompatible.o laswaveform13reader.o laswaveform13writer.o lasutility.o lasfilter.o lastransform.o laskdtree.o fopen_compressed.o
 
