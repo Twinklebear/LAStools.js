@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+
+	<title>WebGL Neuron Viewer</title>
+</head>
+<body>
+	<div class="container mt-4 mb-4">
+		<div class="row">
+			<div class="col-12 text-center">
+                <h3 id="viewerTitle">WebASM LAS Example</h3>
+			</div>
+			<div class="mx-auto col-12 col-lg-8 row">
+                <input type="file" class="custom-file-input" id="uploadLAS"
+                        accept=".las,.laz"
+                        onchange="uploadLAS(this.files);">
+                <label class="custom-file-label" for="uploadLAS">Upload LAS/LAZ File</label>
+            </div>
+        </div>
+	</div>
+	<script src="liblas.js"></script>
+	<script src="liblas_wrapper.js"></script>
+	<script src="import_las.js"></script>
+</body>
+</html>
+
+

@@ -1,3 +1,10 @@
+# LASTools.js
+
+LASTools compiled to a WebASM distribution, providing a convenient C/JS interface
+for LiDAR processing in the browser. See the [web](web/) directory for the JS
+wrapper and an example.
+
+
 LAStools: award-winning software for efficient LiDAR processing (with LASzip)
 
 You find all individual LAStools in the .\LAStools\bin directory. Start
